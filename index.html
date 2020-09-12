@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Desafio: To Do list</title>
+</head>
+<body>
+<div class="container">
+    <div id="app">
+    <h1>{{title}}</h1>
+    <p>{{paragraph}}</p> 
+    <br>
+    <input type="text" placeholder="Ingrese nueva tarea" v-model="tareas"> 
+    <div><button @click="agregar_tarea">Crear</button></div>
+    <br>
+    <h3>{{subtitle}}</h3>
+    <ol>
+        <li v-for="tareas in tareas2">{{tareas}}</li>
+    </ol>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    
+</body>
+</html> 
